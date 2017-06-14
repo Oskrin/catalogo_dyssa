@@ -1,0 +1,83 @@
+<div class="main-content">	
+	<div class="main-content-inner">
+	    <div class="breadcrumbs" id="breadcrumbs">
+			<script type="text/javascript">
+				try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+			</script>
+
+			<ul class="breadcrumb">
+				<li>
+					<i class="ace-icon fa fa-home home-icon"></i>
+					<a href="#/">Inicio</a>
+				</li>
+
+				<li class="active">Repositorio</li>
+				<li class="active">Nuevo Repositorio</li>
+			</ul>
+		</div>
+
+	    <div class="page-content">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="space"></div>
+					<form class="form-horizontal" name="form_repositorio" id="form_repositorio" autocomplete="off">
+						<div class="tabbable">
+							<ul class="nav nav-tabs padding-16">
+								<li ng-class="{ active: isSet(1)}">
+									<a data-toggle="tab" href ng-click="setTab(1)">
+										<i class="green ace-icon fa fa-pencil-square-o bigger-125"></i>
+										REPOSITORIO
+									</a>
+								</li>
+							</ul>
+
+							<div class="tab-content profile-edit-tab-content" >
+								<div ng-show="isSet(1)">
+									&nbsp;
+
+									<div class="row">
+										<div class="col-sm-12">
+											<h4 class="blue bigger">Este número es el identificador de tu factura en el SRI.</h4>
+											&nbsp;
+											<div class="row">
+												<div class="col-sm-9">
+													<div class="col-sm-6">
+														<div class="form-group">
+															<label class="col-sm-4 control-label no-padding-right" for="txt_clave">Clave de Acceso:
+</label>
+															<div class="col-sm-8">
+																<input type="text" name="txt_clave" id="txt_clave" class="form-control" maxlength="49" />
+															</div>
+														</div>
+													</div>
+
+													<div class="col-sm-6">
+														<div class="form-group">
+															<div class="col-sm-8">
+																<button type="button" name="btn_consultar" id="btn_consultar" class="btn btn-pink btn-sm"><i class="ace-icon fa fa-search"></i> CONSULTAR</button>
+															</div>
+														</div>
+													</div>
+												</div>	
+											</div>
+											&nbsp; &nbsp;
+
+											<div class="widget-box">
+									            <div class="widget-main"> 
+													<table id="table"></table>
+													<div id="pager"></div>                                           
+									            </div>
+									        </div>											
+										</div>	
+									</div>	
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+
+

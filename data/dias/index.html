@@ -1,0 +1,150 @@
+<div class="main-content">	
+	<div class="main-content-inner">
+	    <div class="breadcrumbs" id="breadcrumbs">
+			<script type="text/javascript">
+				try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+			</script>
+
+			<ul class="breadcrumb">
+				<li>
+					<i class="ace-icon fa fa-home home-icon"></i>
+					<a href="#/">Inicio</a>
+				</li>
+
+				<li class="active">Parametros</li>
+				<li class="active">Ingreso Días</li>
+			</ul>
+		</div>
+
+	    <div class="page-content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 widget-container-col">
+                    <div class="widget-body">
+                        <div class="widget-main">
+                            <div class="row">
+                            	<div class="control">
+				            		<div class="col-sm-3">
+										<!-- <div class="clearfix">
+											<span class="block input-icon input-icon-right">
+												<input type="text" name="buscador" id="buscador" class="form-control dimensiones" placeholder="Buscar....." onKeyUp="" />
+												<i class="ace-icon fa fa-search blue"></i>
+								            </span>
+										</div> -->
+									</div>
+
+									<button type="button" id="btn_abrir" name="btn_abrir" class="btn btn-pink posicion" data-toggle="modal" href="#myModal"><i class="fa fa-plus-circle"></i> NUEVO</button>
+								</div>
+								&nbsp;
+
+                                <table id="grid-table"></table>
+                                <div id="grid-pager"></div>
+                            </div>                                              
+                        </div>
+                    </div>
+                </div>
+            </div>                          
+        </div>
+	</div>
+</div>
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="myModal">
+    <div class="modal-dialog modal-sm">
+      	<div class="modal-content">
+	        <div class="table-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					<span class="white">&times;</span>
+				</button>
+				Agregar Registro
+			</div>
+	        <br />
+
+	        <form class="form-horizontal" name="form_registro" id="form_registro">
+	        	<div class="row">
+	        		<input type="hidden" name="id" id="id" class="form-control" />
+	        		<div class="form-group">
+						<label class="control-label col-sm-4 no-padding-right">LUNES:</label>
+						<div class="col-sm-6">
+							<label>
+								<input name="lunes" id="lunes" class="ace ace-switch ace-switch-5" type="checkbox" checked>
+								<span class="lbl"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-4 no-padding-right">MARTES:</label>
+						<div class="col-sm-6">
+							<label>
+								<input name="martes" id="martes" class="ace ace-switch ace-switch-5" type="checkbox" checked>
+								<span class="lbl"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-4 no-padding-right">MIERCOLES:</label>
+						<div class="col-sm-6">
+							<label>
+								<input name="miercoles" id="miercoles" class="ace ace-switch ace-switch-5" type="checkbox" checked>
+								<span class="lbl"></span>
+							</label>
+						</div>
+					</div>
+	        		
+					<div class="form-group">
+						<label class="control-label col-sm-4 no-padding-right">JUEVES:</label>
+						<div class="col-sm-6">
+							<label>
+								<input name="jueves" id="jueves" class="ace ace-switch ace-switch-5" type="checkbox" checked>
+								<span class="lbl"></span>
+							</label>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="control-label col-sm-4 no-padding-right">VIERNES:</label>
+						<div class="col-sm-6">
+							<label>
+								<input name="viernes" id="viernes" class="ace ace-switch ace-switch-5" type="checkbox" checked>
+								<span class="lbl"></span>
+							</label>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="control-label col-sm-4 no-padding-right">SÁBADO:</label>
+						<div class="col-sm-6">
+							<label>
+								<input name="sabado" id="sabado" class="ace ace-switch ace-switch-5" type="checkbox" checked>
+								<span class="lbl"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-4 no-padding-right">DOMINGO:</label>
+						<div class="col-sm-6">
+							<label>
+								<input name="domingo" id="domingo" class="ace ace-switch ace-switch-5" type="checkbox" checked>
+								<span class="lbl"></span>
+							</label>
+						</div>
+					</div>
+	        	</div>
+	        </form>
+		        
+			<br />
+	        <div class="modal-footer no-margin-top">
+				<button class="btn btn-sm btn-danger pull-left" data-dismiss="modal" data-toggle="tooltip" title="Cerrar ventana">
+					<i class="ace-icon fa fa-times"></i>
+					Cerrar
+				</button>
+
+				<button name="btn_0" id="btn_0" class="btn btn-sm btn-success pull-right" data-toggle="tooltip" title="Guardar Registro">
+					<i class="ace-icon fa fa-save"></i>
+					Guardar
+				</button>
+			</div>
+      	</div>
+    </div>
+</div>
